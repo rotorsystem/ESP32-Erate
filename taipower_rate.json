@@ -1,6 +1,6 @@
 {
   "_comment": "【測試專用】費率放大1000倍，方便 40W 負載快速驗證電費跳動",
-  "version": "2026.TEST",
+  "version": "2026.TEST2",
   "updated_date": "2026-08-22",
   "summer_start_month": 6,
   "summer_end_month": 9,
