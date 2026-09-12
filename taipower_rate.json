@@ -1,39 +1,41 @@
 {
-  "_comment": "【測試專用】費率放大1000倍，方便 40W 負載快速驗證電費跳動",
-  "version": "2026.TEST3",
-  "updated_date": "2026-08-22",
+  "_comment": "台灣電力公司表燈用電累進電費基準表（由 active_mode 切換費率）",
+  "version": "2026.1",
+  "updated_date": "2026-09-12",
+  "active_mode": "standard",
+  "_mode_options": "standard (標準台電費率) / test_1000x (40W測試放大1000倍)",
   "summer_start_month": 6,
   "summer_end_month": 9,
   "business": {
     "summer": [
-      { "limit": 330, "rate": 2530.0 },
-      { "limit": 500, "rate": 3760.0 },
-      { "limit": 1500, "rate": 5330.0 },
-      { "limit": -1, "rate": 7030.0 }
+      { "limit": 330, "rate": 2.53, "test_rate_1000x": 2530.0 },
+      { "limit": 500, "rate": 3.76, "test_rate_1000x": 3760.0 },
+      { "limit": 1500, "rate": 5.33, "test_rate_1000x": 5330.0 },
+      { "limit": -1, "rate": 7.03, "test_rate_1000x": 7030.0 }
     ],
     "non_summer": [
-      { "limit": 330, "rate": 2120.0 },
-      { "limit": 500, "rate": 3090.0 },
-      { "limit": 1500, "rate": 4310.0 },
-      { "limit": -1, "rate": 5830.0 }
+      { "limit": 330, "rate": 2.12, "test_rate_1000x": 2120.0 },
+      { "limit": 500, "rate": 3.09, "test_rate_1000x": 3090.0 },
+      { "limit": 1500, "rate": 4.31, "test_rate_1000x": 4310.0 },
+      { "limit": -1, "rate": 5.83, "test_rate_1000x": 5830.0 }
     ]
   },
   "non_business": {
     "summer": [
-      { "limit": 120, "rate": 1680.0 },
-      { "limit": 330, "rate": 2450.0 },
-      { "limit": 500, "rate": 3700.0 },
-      { "limit": 700, "rate": 5040.0 },
-      { "limit": 1000, "rate": 6240.0 },
-      { "limit": -1, "rate": 7690.0 }
+      { "limit": 120, "rate": 1.68, "test_rate_1000x": 1680.0 },
+      { "limit": 330, "rate": 2.45, "test_rate_1000x": 2450.0 },
+      { "limit": 500, "rate": 3.70, "test_rate_1000x": 3700.0 },
+      { "limit": 700, "rate": 5.04, "test_rate_1000x": 5040.0 },
+      { "limit": 1000, "rate": 6.24, "test_rate_1000x": 6240.0 },
+      { "limit": -1, "rate": 7.69, "test_rate_1000x": 7690.0 }
     ],
     "non_summer": [
-      { "limit": 120, "rate": 1680.0 },
-      { "limit": 330, "rate": 2160.0 },
-      { "limit": 500, "rate": 3030.0 },
-      { "limit": 700, "rate": 4140.0 },
-      { "limit": 1000, "rate": 5070.0 },
-      { "limit": -1, "rate": 6030.0 }
+      { "limit": 120, "rate": 1.68, "test_rate_1000x": 1680.0 },
+      { "limit": 330, "rate": 2.16, "test_rate_1000x": 2160.0 },
+      { "limit": 500, "rate": 3.03, "test_rate_1000x": 3030.0 },
+      { "limit": 700, "rate": 4.14, "test_rate_1000x": 4140.0 },
+      { "limit": 1000, "rate": 5.07, "test_rate_1000x": 5070.0 },
+      { "limit": -1, "rate": 6.03, "test_rate_1000x": 6030.0 }
     ]
   }
 }
